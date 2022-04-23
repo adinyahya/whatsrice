@@ -354,31 +354,31 @@ module.exports = async(conn, msg, m, setting, store, welcome) => {
 			      sendContact(from, x.split('@s.whatsapp.net')[0], 'Owner', msg)
 			    }
 			    break
-			case prefix+'cekprem':
-            case prefix+'cekpremium':
-                if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}daftarprem* untuk membeli premium`)
-                if (isOwner) return reply(`Lu owner bego!`)
-                if (_prem.getPremiumExpired(sender, premium) == "PERMANENT") return reply(`PERMANENT`)
-                let cekvip = ms(_prem.getPremiumExpired(sender, premium) - Date.now())
-                let premiumnya = `*Expire :* ${cekvip.days} day(s) ${cekvip.hours} hour(s) ${cekvip.minutes} minute(s)`
-                reply(premiumnya)
-                break
-            case prefix+'listprem':
-                let txt = `List Prem\nJumlah : ${premium.length}\n\n`
-                let men = [];
-                for (let i of premium) {
-                    men.push(i.id)
-                    txt += `*ID :* @${i.id.split("@")[0]}\n`
-                  if (i.expired === 'PERMANENT') {
-                    let cekvip = 'PERMANENT'
-                    txt += `*Expire :* PERMANENT\n\n`
-                  } else {
-                    let cekvip = ms(i.expired - Date.now())
-                    txt += `*Expire :* ${cekvip.days} day(s) ${cekvip.hours} hour(s) ${cekvip.minutes} minute(s) ${cekvip.seconds} second(s)\n\n`
-                  }
-                }
-                mentions(txt, men, true)
-                break
+			// case prefix+'cekprem':
+            // case prefix+'cekpremium':
+            //     if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}daftarprem* untuk membeli premium`)
+            //     if (isOwner) return reply(`Lu owner bego!`)
+            //     if (_prem.getPremiumExpired(sender, premium) == "PERMANENT") return reply(`PERMANENT`)
+            //     let cekvip = ms(_prem.getPremiumExpired(sender, premium) - Date.now())
+            //     let premiumnya = `*Expire :* ${cekvip.days} day(s) ${cekvip.hours} hour(s) ${cekvip.minutes} minute(s)`
+            //     reply(premiumnya)
+            //     break
+            // case prefix+'listprem':
+            //     let txt = `List Prem\nJumlah : ${premium.length}\n\n`
+            //     let men = [];
+            //     for (let i of premium) {
+            //         men.push(i.id)
+            //         txt += `*ID :* @${i.id.split("@")[0]}\n`
+            //       if (i.expired === 'PERMANENT') {
+            //         let cekvip = 'PERMANENT'
+            //         txt += `*Expire :* PERMANENT\n\n`
+            //       } else {
+            //         let cekvip = ms(i.expired - Date.now())
+            //         txt += `*Expire :* ${cekvip.days} day(s) ${cekvip.hours} hour(s) ${cekvip.minutes} minute(s) ${cekvip.seconds} second(s)\n\n`
+            //       }
+            //     }
+            //     mentions(txt, men, true)
+            //     break
 	        // Converter & Tools Menu
 			// case prefix+'sticker': case prefix+'stiker': case prefix+'s':
 			//     if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)

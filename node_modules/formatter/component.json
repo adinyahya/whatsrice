@@ -1,0 +1,16 @@
+{
+  "name": "formatter",
+  "repo": "DamonOehlman/formatter",
+  "description": "Simple String Variable Replacement Formatter",
+  "version": "0.4.1",
+  "keywords": [
+    "string",
+    "formatting",
+    "variable",
+    "replacement"
+  ],
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

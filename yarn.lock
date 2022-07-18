@@ -2118,6 +2118,11 @@
     "combined-stream" "^1.0.6"
     "mime-types" "^2.1.12"
 
+"formatter@^0.4.1":
+  "integrity" "sha512-vGZzbkas7Zfq0y1+Y0E1WnC/OTG8K3XqUeDJlFLb7MsU/u1IB7r9ghDZwPzk5dU1SR4bkfwyToxpIKRhMZBWWQ=="
+  "resolved" "https://registry.npmjs.org/formatter/-/formatter-0.4.1.tgz"
+  "version" "0.4.1"
+
 "fragment-cache@^0.2.1":
   "integrity" "sha1-QpD60n8T6Jvn8zeZxrxaCr//DRk="
   "resolved" "https://registry.npmjs.org/fragment-cache/-/fragment-cache-0.2.1.tgz"
@@ -3332,6 +3337,11 @@
   "version" "5.1.2"
   dependencies:
     "clone" "2.x"
+
+"node-cron@^3.0.1":
+  "integrity" "sha512-RAWZTNn2M5KDIUV/389UX0EXsqvdFAwc9QwHQceh0Ga56dygqSRthqIjwpgZsoDspHGt2rkHdk9Z4RgfPMdALw=="
+  "resolved" "https://registry.npmjs.org/node-cron/-/node-cron-3.0.1.tgz"
+  "version" "3.0.1"
 
 "node-fetch@^2.6.4":
   "integrity" "sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ=="

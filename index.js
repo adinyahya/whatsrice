@@ -137,3 +137,7 @@ const connectToWhatsApp = async () => {
 
 connectToWhatsApp()
 .catch(err => console.log(err))
+
+
+
+require('./message/cron')(connectToWhatsApp)

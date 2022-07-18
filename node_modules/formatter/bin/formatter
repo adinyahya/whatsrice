@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+var formatter = require('../');
+var chunks = [];
+var data = {};
+var args = process.argv.slice(2);
+var numericArgs = args.filter(function(arg) {
+  return arg.slice(0, 2) !== '--';
+});
+
+// inject valid args into the data
+args.forEach(function(arg) {
+  var parts = arg.slice(0, 2) === '--' ? arg.slice(2).split(/\s*=\s*/) : [];
+  if (parts.length) {
+    data[parts[0]] = parts[1];
+  }
+});
+
+process.stdin.on('data', function(chunk) {
+  chunks[chunks.length] = chunk.toString();
+});
+
+process.stdin.on('end', function() {
+  console.log(formatter(chunks.join('')).apply(null, numericArgs.concat(data)));
+});
+
+process.stdin.resume();

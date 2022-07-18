@@ -316,24 +316,6 @@ module.exports = async(conn, msg, m, setting, store, welcome) => {
 			case 'adin':
 				reply(`Hi 👋 apa kamu mengenalku?, jika belum, sangat senang sekali jika kamu mau perkenalkan diri dulu sebelum lanjut percakapan ini. :D 😬`)
 				break;
-			case 'din':
-				reply(`Hi 👋 apa kamu mengenalku?, jika belum, sangat senang sekali jika kamu mau perkenalkan diri dulu sebelum lanjut percakapan ini. :D 😬`)
-				break;
-			case 'mas adin':
-				reply(`Hi 👋 apa kamu mengenalku?, jika belum, sangat senang sekali jika kamu mau perkenalkan diri dulu sebelum lanjut percakapan ini. :D 😬`)
-				break;
-			case 'mas':
-				reply(`Hi 👋 apa kamu mengenalku?, jika belum, sangat senang sekali jika kamu mau perkenalkan diri dulu sebelum lanjut percakapan ini. :D 😬`)
-				break;
-			case 'masdin':
-				reply(`Hi 👋 apa kamu mengenalku?, jika belum, sangat senang sekali jika kamu mau perkenalkan diri dulu sebelum lanjut percakapan ini. :D 😬`)
-				break;
-			case 'adinn':
-				reply(`Hi 👋 apa kamu mengenalku?, jika belum, sangat senang sekali jika kamu mau perkenalkan diri dulu sebelum lanjut percakapan ini. :D 😬`)
-				break;
-			case 'ndos':
-				reply(`Hi 👋 apa kamu mengenalku?, jika belum, sangat senang sekali jika kamu mau perkenalkan diri dulu sebelum lanjut percakapan ini. :D 😬`)
-				break;
 			case 'sayang':
 				reply(`iya ayang akuuu 🤗.`)
 				break;
